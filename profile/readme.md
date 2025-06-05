@@ -1,5 +1,5 @@
-# Flint Hills Chapter of Democratic Socialists of America
-## Official Github 
+# Github for the Flint Hills Chapter of Democratic Socialists of America
+
 
 --------
 
