@@ -31,7 +31,7 @@ Housing these materials in one place keeps members informed, lowers onboarding f
 
 2. **Democratic collaboration**. Pull requests function like mini-proposals: anyone can suggest wording, data, or strategy changes; nothing is merged without collective review. Comments, reviews, and reaction emojis turn into a living dialogue—far more traceable than email threads.
 
-3. **Version history** = living history. Git automatically records who changed what and why. Reverting mistakes or tracing the evolution of a policy is as simple as scrolling the commit log.
+3. **Version history = living history**. Git automatically records who changed what and why. Reverting mistakes or tracing the evolution of a policy is as simple as scrolling the commit log.
 
 4. **Low-barrier participation**. Members who don’t “speak Git” can still click Edit → Propose changes in the web UI or leave feedback in Issues and Discussions. No special software required.
 
