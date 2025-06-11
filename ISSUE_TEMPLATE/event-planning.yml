@@ -1,0 +1,99 @@
+name: Event Planning
+description: Plan educational events, social events, or public actions
+title: "[EVENT] "
+labels: ["event", "planning"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Event Planning
+        Use this template to propose and plan chapter events.
+        
+  - type: dropdown
+    id: event_type
+    attributes:
+      label: Type of Event
+      description: What kind of event is this?
+      options:
+        - Educational/Political Education
+        - Social Event
+        - Public Action/Rally
+        - Fundraiser
+        - Meeting (Special)
+        - Community Outreach
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: event_title
+    attributes:
+      label: Event Title
+      description: What's the name/title of this event?
+      placeholder: "e.g., 'Healthcare for All Town Hall', 'DSA Winter Social'"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: event_description
+    attributes:
+      label: Event Description
+      description: Describe the event's purpose, format, and content
+      placeholder: "What will happen at this event? Who is the target audience?"
+    validations:
+      required: true
+      
+  - type: input
+    id: proposed_date
+    attributes:
+      label: Proposed Date(s)
+      description: When should this event happen?
+      placeholder: "e.g., March 15, 2025 or 'Sometime in April'"
+    validations:
+      required: true
+      
+  - type: input
+    id: proposed_location
+    attributes:
+      label: Proposed Location
+      description: Where should this event be held?
+      placeholder: "e.g., Community Center, Online, TBD"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: target_audience
+    attributes:
+      label: Target Audience
+      description: Who is this event for?
+      placeholder: "e.g., Chapter members, General public, Union members, Students"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: budget_estimate
+    attributes:
+      label: Estimated Budget
+      description: What might this event cost?
+      placeholder: "Break down venue, food, materials, speaker fees, etc."
+    validations:
+      required: false
+      
+  - type: textarea
+    id: volunteers_needed
+    attributes:
+      label: Volunteers/Help Needed
+      description: What roles need to be filled to make this happen?
+      placeholder: "e.g., Setup crew, registration, social media promotion"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: materials_needed
+    attributes:
+      label: Materials/Equipment Needed
+      description: What supplies or equipment will be required?
+      placeholder: "e.g., Projector, tables, literature, signs"
+    validations:
+      required: false
