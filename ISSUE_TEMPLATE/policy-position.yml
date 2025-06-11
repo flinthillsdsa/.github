@@ -1,0 +1,74 @@
+name: Policy Position
+description: Develop or update chapter position on local/state issues
+title: "[POLICY] "
+labels: ["policy", "needs-research", "needs-discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Policy Position Development
+        Use this template to propose developing or updating our chapter's position on policy issues.
+        
+  - type: input
+    id: issue_topic
+    attributes:
+      label: Policy Issue
+      description: What is the specific policy issue or topic?
+      placeholder: "e.g., Rent Control Ordinance, Public Transit Funding, Police Budget"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: issue_background
+    attributes:
+      label: Issue Background
+      description: Provide context about this policy issue
+      placeholder: "Explain the current situation, key stakeholders, recent developments"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed_position
+    attributes:
+      label: Proposed Chapter Position
+      description: What position should our chapter take?
+      placeholder: "Outline the proposed stance and key points"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: dsa_alignment
+    attributes:
+      label: Alignment with DSA Principles
+      description: How does this align with DSA's democratic socialist principles?
+      placeholder: "Connect to broader DSA values and goals"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: local_impact
+    attributes:
+      label: Local Impact
+      description: How would this policy affect our local community?
+      placeholder: "Describe impacts on working class, marginalized communities, etc."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: research_needed
+    attributes:
+      label: Additional Research Needed
+      description: What information do we still need to gather?
+      placeholder: "List research tasks, data needed, experts to consult"
+    validations:
+      required: false
+      
+  - type: input
+    id: urgency
+    attributes:
+      label: Timeline/Urgency
+      description: Is there a deadline for taking a position?
+      placeholder: "e.g., City Council vote next month, ongoing issue"
+    validations:
+      required: false
