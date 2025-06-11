@@ -1,0 +1,105 @@
+name: Meeting Agenda Item
+description: Propose item for upcoming chapter meeting
+title: "[AGENDA] "
+labels: ["meeting", "agenda-item"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Meeting Agenda Item
+        Use this template to propose items for upcoming chapter meetings.
+        
+  - type: dropdown
+    id: meeting_type
+    attributes:
+      label: Meeting Type
+      description: Which meeting is this for?
+      options:
+        - General Membership Meeting
+        - Steering Committee Meeting
+        - Working Group Meeting
+        - Special Meeting
+        - Next Available Meeting
+    validations:
+      required: true
+      
+  - type: input
+    id: agenda_item_title
+    attributes:
+      label: Agenda Item Title
+      description: Brief title for this agenda item
+      placeholder: "e.g., 'Vote on Bylaws Amendment', 'Housing Campaign Update'"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: item_description
+    attributes:
+      label: Item Description
+      description: Detailed description of what will be discussed/decided
+      placeholder: "Explain the topic, background, and what needs to happen"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: time_needed
+    attributes:
+      label: Estimated Time Needed
+      description: How long will this take?
+      options:
+        - 5 minutes
+        - 10 minutes
+        - 15 minutes
+        - 30 minutes
+        - 45 minutes
+        - 1 hour
+        - More than 1 hour
+    validations:
+      required: true
+      
+  - type: textarea
+    id: materials_needed
+    attributes:
+      label: Materials/Preparation Required
+      description: What materials or prep work is needed?
+      placeholder: "Documents to review, presentations to prepare, research needed, etc."
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: action_requested
+    attributes:
+      label: Action Requested
+      description: What kind of action is needed from the meeting?
+      options:
+        - Information/Discussion Only
+        - Decision/Vote Required
+        - Approval Needed
+        - Volunteer Recruitment
+        - Planning/Coordination
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: presenter
+    attributes:
+      label: Presenter/Lead
+      description: Who will present or lead this agenda item?
+      placeholder: "Name of person who will facilitate this discussion"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is it that this gets on the agenda?
+      options:
+        - Low - Can wait if meeting is full
+        - Medium - Should be included if possible
+        - High - Important to address soon
+        - Urgent - Must be on next meeting agenda
+    validations:
+      required: true
