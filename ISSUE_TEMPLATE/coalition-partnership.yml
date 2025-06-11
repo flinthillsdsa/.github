@@ -1,0 +1,83 @@
+name: Coalition Partnership
+description: Propose working with other organizations
+title: "[COALITION] "
+labels: ["coalition", "external-relations", "needs-discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Coalition/Partnership Proposal
+        Use this template to propose partnerships or coalition work with other organizations.
+        
+  - type: input
+    id: organization_name
+    attributes:
+      label: Organization Name
+      description: What organization are we considering partnering with?
+      placeholder: "e.g., Teachers Union Local 123, Housing Justice Coalition"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: organization_details
+    attributes:
+      label: Organization Background
+      description: Tell us about this organization
+      placeholder: "Mission, membership size, key activities, political orientation"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed_collaboration
+    attributes:
+      label: Proposed Collaboration
+      description: What specific work would we do together?
+      placeholder: "Joint events, shared campaigns, resource sharing, etc."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: shared_goals
+    attributes:
+      label: Shared Goals/Interests
+      description: What goals do we have in common?
+      placeholder: "How do our missions and current priorities align?"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: resource_commitments
+    attributes:
+      label: Resource Commitments
+      description: What would each organization contribute?
+      placeholder: "Time, money, people, skills, networks, etc."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: potential_risks
+    attributes:
+      label: Potential Risks or Concerns
+      description: What challenges or risks should we consider?
+      placeholder: "Political differences, resource drain, public perception, etc."
+    validations:
+      required: false
+      
+  - type: input
+    id: timeline
+    attributes:
+      label: Proposed Timeline
+      description: How long would this partnership last?
+      placeholder: "e.g., One-time collaboration, 6-month campaign, ongoing relationship"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: previous_interaction
+    attributes:
+      label: Previous Interaction
+      description: Have we worked with this organization before?
+      placeholder: "History of collaboration, if any"
+    validations:
+      required: false
