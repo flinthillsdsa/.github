@@ -1,0 +1,91 @@
+name: Document Request
+description: Create new chapter document or update existing one
+title: "[DOCUMENT] "
+labels: ["documentation", "needs-drafting"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Document Creation/Update Request
+        Use this template to request creation of new documents or updates to existing ones.
+        
+  - type: dropdown
+    id: document_type
+    attributes:
+      label: Type of Document
+      description: What kind of document is needed?
+      options:
+        - Policy Document
+        - Procedure/Process Guide
+        - Educational Material
+        - Template/Form
+        - Governing Document
+        - Public Statement
+        - Internal Communication
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: document_title
+    attributes:
+      label: Document Title/Name
+      description: What should this document be called?
+      placeholder: "e.g., 'Conflict Resolution Procedures', 'New Member Handbook'"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: document_purpose
+    attributes:
+      label: Purpose and Scope
+      description: What is this document for and what should it cover?
+      placeholder: "Explain why we need this document and what topics it should address"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: target_audience
+    attributes:
+      label: Target Audience
+      description: Who will use this document?
+      placeholder: "e.g., All members, Steering committee, Working group leaders, Public"
+    validations:
+      required: true
+      
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline/Timeline
+      description: When is this document needed?
+      placeholder: "e.g., Before next general meeting, no rush"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: existing_resources
+    attributes:
+      label: Existing Resources
+      description: Are there existing documents we can build on?
+      placeholder: "Reference any current docs, templates from other chapters, etc."
+    validations:
+      required: false
+      
+  - type: input
+    id: assigned_writer
+    attributes:
+      label: Assigned Writer/Owner
+      description: Who will draft this document?
+      placeholder: "Name or 'Seeking volunteer'"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: review_process
+    attributes:
+      label: Review Process Needed
+      description: What kind of review/approval will this need?
+      placeholder: "e.g., Steering committee review, legal review, membership vote"
+    validations:
+      required: false
