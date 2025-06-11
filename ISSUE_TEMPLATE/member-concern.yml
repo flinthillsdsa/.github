@@ -1,0 +1,79 @@
+name: Member Concern
+description: Raise concerns about chapter operations or member conduct
+title: "[CONCERN] "
+labels: ["member-concern", "confidential"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Member Concern or Grievance
+        Use this template to raise concerns about chapter operations, member conduct, or other internal issues.
+        
+        **Note**: For serious misconduct or harassment, please also contact steering committee directly.
+        
+  - type: dropdown
+    id: concern_type
+    attributes:
+      label: Type of Concern
+      description: What kind of concern is this?
+      options:
+        - Member Conduct
+        - Chapter Operations
+        - Meeting Process
+        - Communication Issues
+        - Discrimination/Harassment
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: concern_description
+    attributes:
+      label: Description of Concern
+      description: Please describe the issue you want to raise
+      placeholder: "Provide details about what happened, when, and who was involved"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact on Chapter/Members
+      description: How is this affecting the chapter or its members?
+      placeholder: "Describe the harm or negative impact"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: desired_resolution
+    attributes:
+      label: Desired Resolution
+      description: What outcome are you hoping for?
+      placeholder: "What would resolve this concern for you?"
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality Preferences
+      description: How should this concern be handled?
+      options:
+        - label: This can be discussed openly in chapter meetings
+        - label: Please keep my identity confidential
+        - label: This should only be handled by steering committee
+        - label: I'm willing to discuss this directly with involved parties
+        
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency Level
+      description: How urgent is this concern?
+      options:
+        - Low - Can be addressed over time
+        - Medium - Should be addressed soon
+        - High - Needs immediate attention
+        - Critical - Emergency situation
+    validations:
+      required: true
