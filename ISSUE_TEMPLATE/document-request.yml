@@ -23,6 +23,7 @@ body:
         - Governing Document
         - Public Statement
         - Internal Communication
+        - Social Media Post
         - Other
     validations:
       required: true
