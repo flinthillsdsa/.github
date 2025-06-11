@@ -1,0 +1,65 @@
+name: Governance Proposal
+description: Propose changes to bylaws, standing rules, or chapter structure
+title: "[GOVERNANCE] "
+labels: ["governance", "needs-discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Governance Proposal
+        Use this template to propose changes to our chapter's governing documents or organizational structure.
+        
+  - type: input
+    id: proposal_type
+    attributes:
+      label: Type of Proposal
+      description: What type of governance change is this?
+      placeholder: "e.g., Bylaws Amendment, Standing Rules Change, Committee Structure"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current_language
+    attributes:
+      label: Current Language/Structure (if applicable)
+      description: Quote the current bylaws/rules text that would be changed
+      placeholder: "Paste current text here, or write 'N/A - New Addition'"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: proposed_language
+    attributes:
+      label: Proposed Language/Structure
+      description: What is your proposed new language or structure?
+      placeholder: "Write your proposed text here"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change needed? What problem does it solve?
+      placeholder: "Explain the reasoning behind this proposal"
+    validations:
+      required: true
+      
+  - type: input
+    id: timeline
+    attributes:
+      label: Proposed Timeline
+      description: When should this be implemented?
+      placeholder: "e.g., Next general meeting, Before 2025 convention"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: affected_groups
+    attributes:
+      label: Who is Affected
+      description: Which groups or roles would be impacted by this change?
+      placeholder: "e.g., All members, Steering Committee, specific working groups"
+    validations:
+      required: false
