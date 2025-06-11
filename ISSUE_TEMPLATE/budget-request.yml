@@ -1,0 +1,90 @@
+name: Budget Request
+description: Request funding for chapter activities or expenses
+title: "[BUDGET] "
+labels: ["budget", "treasurer-review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Budget Request
+        Use this template to request chapter funding for activities, events, or expenses.
+        
+  - type: input
+    id: amount_requested
+    attributes:
+      label: Amount Requested
+      description: How much money are you requesting?
+      placeholder: "e.g., $150.00"
+    validations:
+      required: true
+      
+  - type: input
+    id: request_purpose
+    attributes:
+      label: Purpose of Request
+      description: What is this money for?
+      placeholder: "e.g., March organizing event, new chapter banners"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: detailed_breakdown
+    attributes:
+      label: Detailed Budget Breakdown
+      description: Provide a line-item breakdown of expenses
+      placeholder: |
+        Example:
+        - Venue rental: $75
+        - Food/refreshments: $50
+        - Materials/supplies: $25
+        Total: $150
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected_outcomes
+    attributes:
+      label: Expected Outcomes/Benefits
+      description: What will this expenditure accomplish for the chapter?
+      placeholder: "How will this advance our organizing goals or chapter development?"
+    validations:
+      required: true
+      
+  - type: input
+    id: event_date
+    attributes:
+      label: Date Needed By
+      description: When do you need these funds?
+      placeholder: "e.g., March 1, 2025"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternative_funding
+    attributes:
+      label: Alternative Funding Sources
+      description: Have you explored other ways to fund this?
+      placeholder: "e.g., Fundraising, donations, cost-sharing with other organizations"
+    validations:
+      required: false
+      
+  - type: input
+    id: requestor
+    attributes:
+      label: Requestor/Point Person
+      description: Who is responsible for this expenditure?
+      placeholder: "Name of person who will handle purchasing/reimbursement"
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: approval_needed
+    attributes:
+      label: Approval Level
+      description: What level of approval do you think this needs?
+      options:
+        - label: Treasurer approval only (under $50)
+        - label: Steering Committee approval (under $200)
+        - label: General membership vote (over $200)
+        - label: Unsure - please advise
