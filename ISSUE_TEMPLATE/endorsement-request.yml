@@ -1,0 +1,100 @@
+name: Endorsement Request
+description: Request chapter endorsement for candidate or ballot measure
+title: "[ENDORSEMENT] "
+labels: ["endorsement", "needs-vote", "needs-discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Endorsement Request
+        Use this template to request chapter endorsement for candidates or ballot measures.
+        
+  - type: dropdown
+    id: endorsement_type
+    attributes:
+      label: Type of Endorsement
+      description: What are we being asked to endorse?
+      options:
+        - Political Candidate
+        - Ballot Measure/Initiative
+        - Referendum
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: candidate_measure
+    attributes:
+      label: Candidate Name or Measure Title
+      description: Who or what is seeking endorsement?
+      placeholder: "e.g., 'Jane Smith for City Council' or 'Proposition A - Rent Control'"
+    validations:
+      required: true
+      
+  - type: input
+    id: office_election
+    attributes:
+      label: Office/Election Details
+      description: What office or election is this for?
+      placeholder: "e.g., District 3 City Council, November 2025 General Election"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: candidate_background
+    attributes:
+      label: Candidate Background or Measure Summary
+      description: Provide relevant background information
+      placeholder: "For candidates: experience, current positions. For measures: what it does, who supports/opposes"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: questionnaire_responses
+    attributes:
+      label: DSA Questionnaire Responses
+      description: Summarize responses to our endorsement questionnaire
+      placeholder: "Key positions on healthcare, housing, labor, etc. Or attach questionnaire file"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: alignment_assessment
+    attributes:
+      label: Alignment with DSA Values
+      description: How well does this candidate/measure align with our principles?
+      placeholder: "Assess alignment with democratic socialist values and chapter priorities"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: What is your recommendation to the chapter?
+      options:
+        - Strong Endorsement
+        - Conditional Endorsement
+        - No Endorsement
+        - Needs More Information
+    validations:
+      required: true
+      
+  - type: input
+    id: decision_deadline
+    attributes:
+      label: Decision Timeline
+      description: When do we need to make this decision?
+      placeholder: "e.g., Before candidate filing deadline, 30 days before election"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other relevant information for consideration
+      placeholder: "Endorsements by other organizations, potential conflicts, etc."
+    validations:
+      required: false
