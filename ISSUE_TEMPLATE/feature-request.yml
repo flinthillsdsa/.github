@@ -1,0 +1,118 @@
+name: 💡 Feature Request
+description: Suggest improvements to our technical systems and processes
+title: "[FEATURE] "
+labels: ["enhancement", "technical"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Feature Request
+        Use this template to suggest improvements to our website, automation, repository structure, or technical processes.
+        
+  - type: dropdown
+    id: feature_area
+    attributes:
+      label: What area needs improvement?
+      description: Which system or process would this enhance?
+      options:
+        - Chapter Website
+        - GitHub Repository Structure
+        - GitHub Actions/Automation
+        - Documentation Organization
+        - Communication Tools
+        - Event Management
+        - Member Management
+        - Social Media Integration
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: feature_title
+    attributes:
+      label: Feature Summary
+      description: Briefly describe the improvement you'd like to see
+      placeholder: "e.g., Automated meeting reminders, Member directory search, Mobile-friendly events page"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current_situation
+    attributes:
+      label: Current Situation
+      description: How do we handle this now? What's lacking?
+      placeholder: "Describe the current process or what's missing"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: What would you like to see implemented?
+      placeholder: "Describe your ideal solution in detail"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: How would this improvement help the chapter?
+      placeholder: "What problems would this solve? How would it make things easier/better?"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternative_solutions
+    attributes:
+      label: Alternative Solutions
+      description: Are there other ways to address this need?
+      placeholder: "Any other approaches you've considered?"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: technical_complexity
+    attributes:
+      label: Technical Complexity (if known)
+      description: How complex do you think this would be to implement?
+      options:
+        - Simple - Minor change/addition
+        - Moderate - Some development work needed
+        - Complex - Significant technical effort
+        - Unknown - Not sure about complexity
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this improvement?
+      options:
+        - Nice to have - Would be convenient
+        - Useful - Would improve our work
+        - Important - Would significantly help
+        - Critical - Essential for our operations
+    validations:
+      required: true
+      
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or References
+      description: Any examples from other organizations or websites?
+      placeholder: "Links to similar features you've seen elsewhere"
+    validations:
+      required: false
+      
+  - type: input
+    id: timeline
+    attributes:
+      label: Desired Timeline
+      description: When would you like to see this implemented?
+      placeholder: "e.g., Before next election cycle, When we have time, ASAP"
+    validations:
+      required: false
