@@ -1,0 +1,108 @@
+name: ✅ Task / Action Item
+description: Track specific to-dos and action items
+title: "[TASK] "
+labels: ["task"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ Task / Action Item
+        Use this template for specific to-dos that need tracking but aren't part of larger proposals.
+        
+  - type: input
+    id: task_title
+    attributes:
+      label: Task Description
+      description: What needs to be done?
+      placeholder: "e.g., Set up tabling at farmer's market, Create phone bank contact list"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: task_category
+    attributes:
+      label: Task Category
+      description: What type of task is this?
+      options:
+        - Event Setup/Logistics
+        - Outreach/Tabling
+        - Communication/Social Media
+        - Administrative
+        - Research/Data Collection
+        - Materials/Printing
+        - Follow-up/Contact
+        - Technical/Website
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: task_details
+    attributes:
+      label: Detailed Description
+      description: Provide more context about what needs to be done
+      placeholder: "Any specific requirements, background information, or instructions"
+    validations:
+      required: false
+      
+  - type: input
+    id: due_date
+    attributes:
+      label: Due Date
+      description: When does this need to be completed?
+      placeholder: "e.g., March 15, Before next meeting, ASAP"
+    validations:
+      required: true
+      
+  - type: input
+    id: assigned_to
+    attributes:
+      label: Assigned To
+      description: Who is responsible for this task?
+      placeholder: "Name or 'Seeking volunteer'"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How urgent is this task?
+      options:
+        - Low
+        - Medium
+        - High
+        - Urgent
+    validations:
+      required: true
+      
+  - type: textarea
+    id: resources_needed
+    attributes:
+      label: Resources/Support Needed
+      description: What help, materials, or access is needed to complete this?
+      placeholder: "e.g., Access to member list, $20 for supplies, help from 2 volunteers"
+    validations:
+      required: false
+      
+  - type: input
+    id: related_campaign
+    attributes:
+      label: Related Campaign/Project
+      description: Is this task part of a larger initiative?
+      placeholder: "e.g., Housing campaign, Member recruitment drive"
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: task_status
+    attributes:
+      label: Current Status
+      description: What's the current state of this task?
+      options:
+        - label: Ready to start
+        - label: Waiting for approval/resources
+        - label: In progress
+        - label: Blocked/needs help
+        - label: Nearly complete
