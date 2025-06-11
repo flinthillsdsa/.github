@@ -1,0 +1,107 @@
+name: 🐛 Bug Report
+description: Report technical issues with website, automation, or documentation
+title: "[BUG] "
+labels: ["bug", "technical"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+        Use this template to report technical problems with our website, GitHub automation, or documentation errors.
+        
+  - type: dropdown
+    id: bug_location
+    attributes:
+      label: Where is the bug?
+      description: What system or location has the problem?
+      options:
+        - Chapter Website
+        - GitHub Repository
+        - GitHub Actions/Automation
+        - Documentation
+        - Email/Newsletter
+        - Social Media Tools
+        - Other Technical System
+    validations:
+      required: true
+      
+  - type: input
+    id: bug_summary
+    attributes:
+      label: Bug Summary
+      description: Briefly describe the problem
+      placeholder: "e.g., Contact form not sending emails, broken link on events page"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: "Describe how things should work normally"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happens? Include error messages if any.
+      placeholder: "Describe exactly what goes wrong, including any error messages"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can someone else see this bug?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Type...
+        4. See error
+    validations:
+      required: true
+      
+  - type: input
+    id: device_browser
+    attributes:
+      label: Device/Browser Information
+      description: What device and browser are you using?
+      placeholder: "e.g., iPhone Safari, Windows Chrome, Mac Firefox"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: screenshots_logs
+    attributes:
+      label: Screenshots or Error Logs
+      description: Attach screenshots or paste error messages here
+      placeholder: "You can drag and drop images here, or paste error text"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency Level
+      description: How critical is this bug?
+      options:
+        - Low - Minor inconvenience
+        - Medium - Affects some functionality
+        - High - Major feature broken
+        - Critical - Site/system unusable
+    validations:
+      required: true
+      
+  - type: input
+    id: when_discovered
+    attributes:
+      label: When Discovered
+      description: When did you first notice this problem?
+      placeholder: "e.g., Today, This week, Been ongoing"
+    validations:
+      required: false
