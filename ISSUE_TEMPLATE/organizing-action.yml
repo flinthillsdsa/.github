@@ -1,0 +1,74 @@
+name: Campaign or Organizing Action
+description: Propose new campaign, endorsement, or organizing initiative
+title: "[ORGANIZING] "
+labels: ["organizing", "campaign", "needs-discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Campaign/Organizing Action Proposal
+        Use this template to propose new campaigns, organizing drives, or collective actions.
+        
+  - type: input
+    id: action_type
+    attributes:
+      label: Type of Action
+      description: What kind of organizing action is this?
+      placeholder: "e.g., Electoral Campaign, Labor Support, Housing Campaign, Direct Action"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Campaign/Action Description
+      description: Provide a detailed description of the proposed action
+      placeholder: "Describe the campaign, target, goals, and approach"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: goals
+    attributes:
+      label: Specific Goals
+      description: What are the concrete, measurable outcomes we're seeking?
+      placeholder: "List specific goals and success metrics"
+    validations:
+      required: true
+      
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline
+      description: What's the proposed timeline for this action?
+      placeholder: "e.g., 3-month campaign, ongoing organizing drive"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: resources_needed
+    attributes:
+      label: Resources Required
+      description: What resources (people, money, materials) would this require?
+      placeholder: "Estimate volunteer hours, budget needs, materials, etc."
+    validations:
+      required: true
+      
+  - type: input
+    id: point_person
+    attributes:
+      label: Proposed Point Person/Lead
+      description: Who would coordinate this effort?
+      placeholder: "Name or 'Seeking volunteer coordinator'"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: coalition_opportunities
+    attributes:
+      label: Coalition/Partnership Opportunities
+      description: What other organizations might we work with on this?
+      placeholder: "List potential allies, coalitions, or partner organizations"
+    validations:
+      required: false
