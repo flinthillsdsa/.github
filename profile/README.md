@@ -11,15 +11,17 @@ To learn more about the Flint Hills DSA Chapter, visit our [website](https://www
 
 #### Purpose
 
-Our GitHub space serves as the single source of truth for everything the Flint Hills DSA does and decides. Here you’ll find:
+Our GitHub space serves as the single source of truth for everything the Flint Hills DSA does and decides. As a member of the public, you will find:
 
 - **Governing documents** – bylaws, resolutions, working‐group charters
+
+- **Educational content** – reading lists, study-group guides, workshop slide decks
+
+Members and active participants of the Flint Hills Chapter of Democratic Socliasts of America have access to additional materials, such as:
 
 - **Meeting materials** – agendas, minutes, slide decks, sign-in sheets
 
 - **Campaign plans & resources** – issue one-pagers, canvassing scripts, data dashboards
-
-- **Educational content** – reading lists, study-group guides, workshop slide decks
 
 - **Operational SOPs** – onboarding checklists, treasurer procedures, security protocols
 
@@ -27,7 +29,7 @@ Housing these materials in one place keeps members informed, lowers onboarding f
 
 #### Why GitHub?
 
-1. **Democratic collaboration**. Pull requests function like mini-proposals: anyone can suggest wording, data, or strategy changes; nothing is merged without collective review. Comments, reviews, and reaction emojis turn into a living dialogue—far more traceable than email threads.
+1. **Democratic collaboration**. Issues function like mini-proposals. Pull requests help develop a proposal into a draft towards implementation, where anyone can suggest wording, data, or strategy changes; nothing is merged without collective review. Comments, reviews, and reaction emojis turn into a living dialogue—far more traceable than email threads.
 
 2. **Version history = living history**. Git automatically records who changed what and why. Reverting mistakes or tracing the evolution of a policy is as simple as scrolling the commit log.
 
