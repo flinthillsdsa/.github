@@ -8,35 +8,3 @@
 This is the official Github for the Flint Hills Chapter of Democratic Socialists of America, located in Manhattan, KS. 
 
 To learn more about the Flint Hills DSA Chapter, visit our [website](https://www.fhdsa.org). Also make sure to follow us on your favorite social media to get updates and engage with us (see above)!
-
-#### Purpose
-
-Our GitHub space serves as the single source of truth for everything the Flint Hills DSA does and decides. As a member of the public, you will find:
-
-- **Governing documents** – bylaws, resolutions, working‐group charters
-
-- **Educational content** – reading lists, study-group guides, workshop slide decks
-
-Members and active participants of the Flint Hills Chapter of Democratic Socliasts of America have access to additional materials, such as:
-
-- **Meeting materials** – agendas, minutes, slide decks, sign-in sheets
-
-- **Campaign plans & resources** – issue one-pagers, canvassing scripts, data dashboards
-
-- **Operational SOPs** – onboarding checklists, treasurer procedures, security protocols
-
-Housing these materials in one place keeps members informed, lowers onboarding friction, and ensures we never lose institutional memory when leadership turns over.
-
-#### Why GitHub?
-
-1. **Democratic collaboration**. Issues function like mini-proposals. Pull requests help develop a proposal into a draft towards implementation, where anyone can suggest wording, data, or strategy changes; nothing is merged without collective review. Comments, reviews, and reaction emojis turn into a living dialogue—far more traceable than email threads.
-
-2. **Version history = living history**. Git automatically records who changed what and why. Reverting mistakes or tracing the evolution of a policy is as simple as scrolling the commit log.
-
-3. **Low-barrier participation**. Members who don’t “speak Git” can still click Edit → Propose changes in the web UI or leave feedback in Issues and Discussions. No special software required.
-
-4. **Built-in automation**. GitHub Actions can publish our website, back up minutes as PDFs, or remind working groups of stale tasks—all without extra cost.
-
-5. **Free and open-source ethos**. GitHub Free gives us unlimited public/private repos and collaborators, aligning perfectly with a grassroots budget.
-
-In short, GitHub gives the chapter a transparent, participatory, and future-proof workspace that mirrors our socialist values!
